@@ -1,0 +1,21 @@
+{
+  "name": "plainjavascript",
+  "version": "1.0.0",
+  "description": "the description",
+  "main": "add.js",
+  "scripts": {
+    "start": "tsc -w add.js",
+    "build": "tsc -w add.js",
+    "test": "karma start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "karma": "^6.3.7",
+    "browserify": "^17.0.0",
+    "karma-browserify": "^8.1.0",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-jasmine": "^4.0.1",
+    "watchify": "^4.0.0"
+  }
+}

@@ -1,0 +1,93 @@
+<html>
+    <header></header>
+    <script src="./add.js"></script>
+    <script>
+        add(10, 20)
+    
+        function Song(name, singer) {
+            this.name = name;
+            this.singer = singer;
+            // this.printFullName = () => {
+            //     console.log("First name " + this.name + ", Last Name " + this.singer);
+            // }
+        }
+        Song.prototype.printFullName = function () {
+            console.log("First name " + this.name + ", Last Name " + this.singer);
+        }
+
+        class Song1 {
+
+            constructor(name, singer){
+                this.name = name;
+                this.singer = singer;
+                this.printFullName = () => {
+                    console.log("First name " + this.name + ", Last Name " + this.singer);
+                }
+            }
+        }
+
+        let song1 = new Song("Let it be", "Beatles")
+        let song2 = new Song("Help", "Beatles")
+
+        console.log("Name 1 "+ song1.name)
+        console.log("Name 2 "+ song2.name)
+
+        // function add(op1, op2) {
+        //     debugger;
+        //     var internalFunctionVariable = 20;
+        //     return op1 + op2;
+        // }
+        //add(10, "20")
+
+        function demonstrateVar() {
+            //console.log("variableInsideFor before " + variableInsideFor);
+            //console.log("variableInsideFor before " + variableInsideFor111);
+
+            for (i = 0; i < 10; i++) {
+                //var variableInsideFor = 20;
+                let variableInsideFor = 20;
+                variableInsideFor = 30;
+
+                const pi = 3.14;
+                //pi = 5
+            }
+
+            console.log("variableInsideFor " + variableInsideFor);
+        }
+
+        function func1() {
+            alert("Hello after 2 seconds")
+        }
+
+        // Rest example
+        function sum(...ops) {
+            debugger;
+        }
+        
+        //sum(10, 20); 
+        //sum (10, 20, 30)
+        //sum(10, 20, 30, 40)
+
+        let addInputs = [10, 20];
+        add(...addInputs);
+
+
+        //setTimeout(func1, 3000);
+
+        // setTimeout( () => {
+        //     alert("Hello after 2 seconds")
+        // }    , 3000);
+
+        //demonstrateVar();
+        //result = add(10, "30")
+        //console.log(result);
+        //console.log(10 + 20);
+        //alert("sadsadsa ")
+
+    </script>
+
+    <body>
+        Hello World
+        <b>I am bold</b>
+    </body>
+</html>

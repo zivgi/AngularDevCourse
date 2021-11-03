@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "noUnusedParameters": false,
+      "removeComments": false,
+      "sourceMap": true,
+      "moduleResolution": "node",
+      "experimentalDecorators": true,
+      "watch": true,
+      "lib": [
+        "es2015",
+        "es2016",
+        "es2017",
+        "dom"
+      ]
+       
+  },
+  "files": [
+      "add.ts"
+  ]
+  
+}
